@@ -1,0 +1,175 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#infoTable
+{
+    width: 100%;
+}
+
+.infoTableTop
+{
+    height: 100px;
+    text-align: center;
+    background-image: url("assets/interface/BirchTop.png");
+}
+
+.infoTableMiddle
+{
+    padding: 15px;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    text-align: center;
+    background-image: url("assets/interface/BirchMid1.png");
+}
+
+.infoTableBottom
+{
+    height: 100px;
+    text-align: center;
+    background-image: url("assets/interface/BirchBottom.png");
+}
+
+.farmPane
+{
+    margin-top: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 40%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.infoPane
+{
+    margin-top: 30px;
+    position: absolute;
+    padding: 15px;
+    top: 0px;
+    left: 40%;
+    bottom: 0px;
+    width: 40%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#stats
+{
+    display: inline-block;
+}
+
+.statsIcon
+{
+    display: inline;
+    vertical-align: middle;
+}
+
+.toolPane
+{
+    margin-top: 30px;
+    position: absolute;
+    top: 0px;
+    width: 20%;
+    bottom: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.imageWrapper
+{
+    position: relative;
+}
+
+.overlayImage
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mousePet
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 100;
+}
+
+#canvas
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar
+{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 2px;
+    background-image: url("assets/interface/BirchMid1.png");
+    background-position: center;
+}
+
+.buttonImage
+{
+    display: inline-block;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.buttonText
+{
+    position: absolute;
+    margin: auto;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#constructButton
+{
+    display: none;
+}

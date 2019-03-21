@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Farming Fantasy</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="scripts/essentials.js" type="text/javascript"></script>
+        <script src="scripts/main.js" type="text/javascript"></script>
+        <script src="scripts/objects/crop.js" type="text/javascript"></script>
+        <script src="scripts/objects/farm.js" type="text/javascript"></script>
+    </head>
+    <body onload="generateBackground()">
+        <canvas id="canvas"></canvas>
+        
+        <div class="mousePet">
+            <canvas id="toolCanvas"></canvas>
+        </div>
+        
+        <div class="farmPane">
+            <canvas id="farmCanvas"></canvas>
+        </div>
+
+        <div class="infoPane">
+            <table id="infoTable">
+                <tr class="infoTableTop"><td></td></tr>
+                <tr class="infoTableMiddle">
+                    <td>
+                        <div id="initialPanel">
+                            <h3>Choose Difficulty Level</h3>
+                            <div class="buttonImage">
+                                <span onclick="initialize(0)" class="buttonText">Easy</span><img src="assets/interface/Button.png" onclick="initialize(0)" id="easyButton">
+                            </div>
+                            <div class="buttonImage">
+                                <span onclick="initialize(1)" class="buttonText">Medium</span><img src="assets/interface/Button.png" onclick="initialize(1)" id="mediumButton">
+                            </div>
+                        </div>
+                        <div id="stats"></div>
+                        <p id="output"></p>
+                        <canvas id="infoCanvas" height=0 width=0></canvas>
+                        <div class="buttonImage" id="constructButton">
+                            <span onclick="Game.expandFarm(false)" class="buttonText">Expand</span><img src="assets/interface/Button.png" onclick="Game.expandFarm(false)">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="infoTableBottom"><td></td></tr>
+            </table>
+        </div>
+
+        <div class="toolPane">
+            <canvas id="toolbarCanvas"></canvas>
+        </div>
+    </body>
+</html> 
